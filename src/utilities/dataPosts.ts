@@ -68,12 +68,87 @@ export const dataPosts = [
     name: getRandomName(),
     description: getRandomPhrase(),
     likes: getRandomLikes()
+  },
+  {
+    id: 11,
+    photo: 'https://source.unsplash.com/1080x1080/?persons',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 12,
+    photo: 'https://source.unsplash.com/1080x1080/?persons-happy',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 13,
+    photo: 'https://source.unsplash.com/1080x1080/?persons-smile',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 14,
+    photo: 'https://source.unsplash.com/1080x1080/?persons-great',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 15,
+    photo: 'https://source.unsplash.com/1080x1080/?persons-beautiful',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 16,
+    photo: 'https://source.unsplash.com/1080x1080/?peoples',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 17,
+    photo: 'https://source.unsplash.com/1080x1080/?peoples-happy',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 18,
+    photo: 'https://source.unsplash.com/1080x1080/?peoples-smile',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 19,
+    photo: 'https://source.unsplash.com/1080x1080/?peoples-great',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 20,
+    photo: 'https://source.unsplash.com/1080x1080/?peoples-beautiful',
+    name: getRandomName(),
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
   }
 ]
 
 function getRandomName() {
-  const nomes = ['Ana', 'João', 'Maria', 'Pedro', 'Carla', 'Lucas', 'Julia', 'Marcos', 'Fernanda', 'Rafael'];
-  const sobrenomes = ['Silva', 'Santos', 'Oliveira', 'Pereira', 'Lima', 'Costa', 'Rocha', 'Martins', 'Almeida', 'Ferreira'];
+  const nomes = [
+    'Ana', 'João', 'Maria', 'Pedro', 'Carla', 'Lucas', 'Julia', 'Marcos', 'Fernanda', 'Rafael', 'Gustavo', 'Isabela', 'Renato', 'Camila', 'Henrique', 'Laura', 'Vinícius', 'Beatriz', 'Thiago', 'Amanda', 'Leonardo', 'Gabriela', 'Felipe', 'Mariana', 'Mateus', 'Raquel', 'Guilherme', 'Caroline', 'Daniel', 'Juliana', 'Rodrigo', 'Patrícia', 'Luciana', 'Bruno', 'Vanessa', 'Ricardo', 'Helena', 'Larissa', 'Eduardo', 'Natália', 'Fábio', 'Priscila', 'Diego', 'Tatiane', 'Alexandre', 'Silvia', 'Wagner', 'Talita'
+  ];
+
+  const sobrenomes = [
+    'Silva', 'Santos', 'Oliveira', 'Pereira', 'Lima', 'Costa', 'Rocha', 'Martins', 'Almeida', 'Ferreira', 'Araújo', 'Cardoso', 'Cavalcanti', 'Correia', 'Dias', 'Gomes', 'Mendes', 'Nunes', 'Pinto', 'Ribeiro', 'Ramos', 'Vieira', 'Monteiro', 'Moreira', 'Castro', 'Soares', 'Fernandes', 'Lopes', 'Moura', 'Azevedo', 'Dantas', 'Barbosa', 'Andrade', 'Campos', 'Cunha', 'Leal', 'Cruz', 'Sousa', 'Melo', 'Freitas', 'Batista', 'Mota', 'Nascimento', 'Bezerra', 'Teixeira', 'Cavalcante', 'Figueiredo', 'Lira'
+  ];
 
   const nomeAleatorio = nomes[Math.floor(Math.random() * nomes.length)];
   const sobrenomeAleatorio = sobrenomes[Math.floor(Math.random() * sobrenomes.length)];

@@ -1,9 +1,21 @@
-import {View, Text} from 'react-native';
+import {View, TextInput} from 'react-native';
+import { search as styles } from '@styles';
+import { useDeferredValue, useState } from 'react';
+import { Persons } from '@src/components/Search/Persons';
 
 export function Search() {
+  const [searchInput, setSearchInput] = useState('')
+  const valueToSearch = useDeferredValue(searchInput)
+
   return (
-    <View>
-      <Text>Search</Text>
+    <View style={styles.container}>
+      <TextInput 
+        value={searchInput}
+        onChangeText={setSearchInput}
+        style={styles.input}
+        selectionColor="#00ff80"
+      />
+      <Persons valueToSearch={valueToSearch}/>
     </View>
   )
 }

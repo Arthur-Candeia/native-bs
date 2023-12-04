@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { TabProvider } from '@src/TabProvider';
+import { StackProvider } from '@src/Providers/StackProvider';
 
 export default function App() {
   return (
     <>
-      <TabProvider />
+      <StackProvider />
       <StatusBar style="dark" backgroundColor='#00ff80' />
     </>
   );

@@ -4,6 +4,7 @@ import { mixins } from './common';
 export const home = StyleSheet.create({
   container: {
     ...mixins.container,
+    gap: 10
   },
   post: {
     alignItems: 'center',
