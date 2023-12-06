@@ -14,6 +14,7 @@ export function Search() {
         onChangeText={setSearchInput}
         style={styles.input}
         selectionColor="#00ff80"
+        placeholder='Buscar usuário'
       />
       <Persons valueToSearch={valueToSearch}/>
     </View>

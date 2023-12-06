@@ -42,5 +42,18 @@ export const homeScreen = StyleSheet.create({
     color: 'white',
     backgroundColor: coolors.darkGreen,
     borderRadius: 5
+  },
+  photosContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 20,
+    width: '100%',
+    marginTop: 10
+  },
+  photos: {
+    width: 50,
+    height: 50,
+    borderRadius: 5
   }
 });

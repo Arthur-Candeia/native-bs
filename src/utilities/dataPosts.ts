@@ -141,6 +141,69 @@ export const dataPosts = [
   }
 ]
 
+export const userPosts = [
+  {
+    id: 1,
+    photo: 'https://source.unsplash.com/1080x1080/?landscape',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 2,
+    photo: 'https://source.unsplash.com/1080x1080/?landscape-beautiful',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 3,
+    photo: 'https://source.unsplash.com/1080x1080/?landscape-great',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 4,
+    photo: 'https://source.unsplash.com/1080x1080/?landscape-nature',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 5,
+    photo: 'https://source.unsplash.com/1080x1080/?landscape-sky',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 6,
+    photo: 'https://source.unsplash.com/1080x1080/?portrait',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 7,
+    photo: 'https://source.unsplash.com/1080x1080/?portrait-beautiful',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 8,
+    photo: 'https://source.unsplash.com/1080x1080/?portrait-great',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 9,
+    photo: 'https://source.unsplash.com/1080x1080/?portrait-nature',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+  {
+    id: 10,
+    photo: 'https://source.unsplash.com/1080x1080/?portrait-sky',
+    description: getRandomPhrase(),
+    likes: getRandomLikes()
+  },
+]
+
 function getRandomName() {
   const nomes = [
     'Ana', 'João', 'Maria', 'Pedro', 'Carla', 'Lucas', 'Julia', 'Marcos', 'Fernanda', 'Rafael', 'Gustavo', 'Isabela', 'Renato', 'Camila', 'Henrique', 'Laura', 'Vinícius', 'Beatriz', 'Thiago', 'Amanda', 'Leonardo', 'Gabriela', 'Felipe', 'Mariana', 'Mateus', 'Raquel', 'Guilherme', 'Caroline', 'Daniel', 'Juliana', 'Rodrigo', 'Patrícia', 'Luciana', 'Bruno', 'Vanessa', 'Ricardo', 'Helena', 'Larissa', 'Eduardo', 'Natália', 'Fábio', 'Priscila', 'Diego', 'Tatiane', 'Alexandre', 'Silvia', 'Wagner', 'Talita'
