@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <StackProvider />
-      <StatusBar style="dark" backgroundColor='#00ff80' />
+      <StatusBar style="dark" backgroundColor='#00ee88' />
     </>
   );
 }

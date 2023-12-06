@@ -37,5 +37,44 @@ export const user = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 5
+  },
+  postHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    width: '100%',
+    marginTop: 24,
+    paddingVertical: 7,
+    paddingHorizontal: 15,
+    backgroundColor: 'white'
+  },
+  postUserInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    width: '100%',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+  },
+  postUserInfoImg: {
+    borderWidth: 2,
+    borderColor: coolors.green,
+    borderRadius: 25,
+  },
+  postUserInfoName: {
+    fontFamily: 'OpenSans_600SemiBold'
+  },
+  likesContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    paddingTop: 5,
+    paddingHorizontal: 10
+  },
+  description: {
+    width: '100%',
+    paddingHorizontal: 10,
+    paddingTop: 5,
+    textAlign: 'justify'
   }
 });

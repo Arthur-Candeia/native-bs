@@ -3,6 +3,7 @@ import {View, Text, ScrollView, Image, Dimensions, TouchableOpacity} from 'react
 import { userPosts } from '@src/utilities/dataPosts';
 import { useNavigation } from '@react-navigation/native';
 import { user as styles } from '@styles';
+import { PostType } from '@src/interfaces/PostType';
 
 export function User() {
   const {name, photo} = useMainContext()
@@ -10,8 +11,8 @@ export function User() {
   const {navigate} = useNavigation<any>()
   const userData = [{qtd: 10, title: 'Publicações'}, {qtd: 395, title: 'Seguidores'}, {qtd: 0, title: 'Seguindo'}]
 
-  function handleNavigate() {
-    navigate('post', {teste: 'abcd'})
+  function handleNavigate(elements: Omit<PostType, 'id' | 'name'>) {
+    navigate('post', elements)
   }
 
   return (
@@ -31,7 +32,11 @@ export function User() {
 
       <ScrollView contentContainerStyle={styles.photosContainer} showsVerticalScrollIndicator={false}>
         {userPosts.map((element, index) => (
-          <TouchableOpacity key={index} activeOpacity={0.8} onPress={handleNavigate}>
+          <TouchableOpacity key={index} activeOpacity={0.8} onPress={() => handleNavigate({
+            photo: element.photo,
+            likes: element.likes,
+            description: element.description
+          })}>
             <Image source={{width: width / 3.5, height: width / 3.5, uri: element.photo}} />
           </TouchableOpacity>
         ))}
